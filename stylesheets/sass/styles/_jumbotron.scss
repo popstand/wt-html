@@ -1,0 +1,9 @@
+.jumbotron-container {
+  padding: 0;
+
+  .jumbotron {
+    margin-bottom: 0;
+
+    @include border-radius(0);
+  }
+}
