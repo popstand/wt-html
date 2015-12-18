@@ -1,9 +1,23 @@
 .jumbotron-container {
   padding: 0;
+  background-image:url('../img/jumbotron-bg.jpg');
+  background-size:cover;
 
   .jumbotron {
+    height: 320px;
     margin-bottom: 0;
+    background: transparent;
 
     @include border-radius(0);
+
+    h1 {
+      float: right;
+      width: 450px;
+      padding-top: 0;
+      margin-top: 0;
+      margin-right: 80px;
+      line-height: 55px;
+      color: gainsboro;
+    }
   }
 }
