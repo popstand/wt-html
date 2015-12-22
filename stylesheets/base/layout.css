@@ -1,4 +1,7 @@
 body {
   padding-top: 50px; }
 
+.container-fluid {
+  max-width: 1440px; }
+
 /*# sourceMappingURL=layout.css.map */

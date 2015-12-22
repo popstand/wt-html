@@ -2,28 +2,42 @@
   .seventh-item, .sixth-item, .fifth-item, .fourth-item {
     display: none !important;
   }
+
+  .navbar-right {
+    display: inline-block;
+  }
 }
+
 @media (min-width: 768px) {
   .fourth-item {
     display: inline-block !important;
   }
+
+  .navbar-right {
+    display: inline-block;
+  }
 }
+
 @media (min-width: 992px) {
   .fifth-item, .sixth-item {
     display: inline-block !important;
   }
 }
+
 @media (min-width: 1200px) {
   .seventh-item {
     display: inline-block !important;
   }
 }
 
-
 .navbar {
   background: white;
   text-transform: uppercase;
   font-size: 0.9em;
+
+  &.navbar-right {
+    display: none;
+  }
 
   li {
     a {
