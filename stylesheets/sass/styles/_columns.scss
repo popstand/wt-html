@@ -7,7 +7,7 @@
     flex:1 1 auto;
   }
   .column-1 {
-    width: 50% !important;
+    width: 50%;
   }
   .column-2 {
     width: 50%;
@@ -34,7 +34,7 @@
     flex:1 1 auto;
   }
   .column-1 {
-    max-width: 320px;
+    min-width: 320px;
   }
   .column-2 {
     max-width: 420px;
@@ -130,7 +130,7 @@
     }
   }
   .column-1 {
-    width: 100%;
+    width: 50%;
     background-color: $column-1-bg;
 
     .post {
@@ -167,7 +167,7 @@
       .post-title {
       }
       .caption {
-        min-width: 90%;
+        min-width: 95%;
         margin: 0 15px;
         height: 40px;
         background:white;

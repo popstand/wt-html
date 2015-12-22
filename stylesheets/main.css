@@ -17,7 +17,7 @@ body {
     flex: 1 1 auto; }
 
   .column-1 {
-    width: 50% !important; }
+    width: 50%; }
 
   .column-2 {
     width: 50%; }
@@ -40,7 +40,7 @@ body {
     flex: 1 1 auto; }
 
   .column-1 {
-    max-width: 320px; }
+    min-width: 320px; }
 
   .column-2 {
     max-width: 420px;
@@ -108,7 +108,7 @@ body {
   .columns .post .post-meta-info:hover .quick-share {
     display: block; }
 .columns .column-1 {
-  width: 100%;
+  width: 50%;
   background-color: #fff; }
   .columns .column-1 .post {
     height: 100px; }
@@ -132,7 +132,7 @@ body {
   .columns .column-3 .post {
     margin-bottom: 20px; }
     .columns .column-3 .post .caption {
-      min-width: 90%;
+      min-width: 95%;
       margin: 0 15px;
       height: 40px;
       background: white;
