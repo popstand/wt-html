@@ -84,11 +84,13 @@ body {
   .navbar li a {
     color: #a8a8a8;
     font-weight: 700; }
-  .navbar .dropdown-menu {
+  .navbar .search {
     min-width: 350px;
     padding: 15px;
     background: #EEE;
     border: 0; }
+    .navbar .search button {
+      font-size: 11px; }
   .navbar .icon-bar {
     background-color: black !important; }
 
