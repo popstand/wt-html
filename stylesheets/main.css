@@ -1,4 +1,4 @@
-html, body, p, a, span, button
+html, body, p, a, span, button,
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Roboto', sans-serif; }
 
@@ -58,12 +58,16 @@ body {
 
   .column-2 {
     min-width: 420px; } }
+.columns .thumbnail {
+  padding: 0;
+  border: 0; }
 .columns .header {
   color: #6dcff6;
   font-size: 1.2em;
   text-transform: uppercase;
   font-weight: 700;
   padding: 10px 0 6px;
+  margin-bottom: 8px;
   position: relative; }
   .columns .header:before {
     content: "";
@@ -84,15 +88,60 @@ body {
     z-index: 5;
     padding-right: 5px;
     position: relative; }
+.columns .post .post-age {
+  float: left;
+  font-size: 14px; }
+.columns .post .post-views {
+  float: right;
+  font-size: 14px; }
+.columns .post .post-views, .columns .post .post-age {
+  color: #c0c0c0; }
+.columns .post .quick-share {
+  display: none; }
+.columns .post a, .columns .post a:hover {
+  color: #7C7C7C; }
+.columns .post .post-meta-info {
+  height: 25px;
+  padding-top: 5px; }
+  .columns .post .post-meta-info:hover .post-age, .columns .post .post-meta-info:hover .post-views {
+    display: none; }
+  .columns .post .post-meta-info:hover .quick-share {
+    display: block; }
 .columns .column-1 {
   width: 100%;
   background-color: #fff; }
+  .columns .column-1 .post {
+    height: 100px; }
+    .columns .column-1 .post .post-title {
+      font-weight: 500;
+      display: block;
+      padding: 2px 0 5px; }
+    .columns .column-1 .post img {
+      max-width: 100px;
+      float: left;
+      padding-right: 13px; }
 .columns .column-2 {
   background-color: #f5f4f4; }
 .columns .column-3 {
   background-color: #ecebeb;
   min-width: 320px;
-  width: 100%; }
+  width: 100%;
+  text-align: center; }
+  .columns .column-3 .header {
+    text-align: left !important; }
+  .columns .column-3 .post {
+    margin-bottom: 20px; }
+    .columns .column-3 .post .caption {
+      min-width: 90%;
+      margin: 0 15px;
+      height: 40px;
+      background: white;
+      padding: 11px;
+      font-size: 20px;
+      display: inline-table;
+      text-align: left; }
+    .columns .column-3 .post .quick-share {
+      margin-top: -5px; }
 
 @media (min-width: 640px) {
   .seventh-item, .sixth-item, .fifth-item, .fourth-item {

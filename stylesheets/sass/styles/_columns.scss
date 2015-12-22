@@ -30,15 +30,12 @@
     display: -webkit-flex;
     display: flex;
   }
-
   .flex > div[class*='col-md']:not(.fixed) {
     flex:1 1 auto;
   }
-
   .column-1 {
     max-width: 320px;
   }
-
   .column-2 {
     max-width: 420px;
     min-width: 370px;
@@ -55,19 +52,24 @@
   .flex > div[class*='col-lg']:not(.fixed) {
     flex:1 1 auto;
   }
-
   .column-2 {
     min-width: 420px;
   }
 }
 
 .columns {
+  .thumbnail {
+
+    padding: 0;
+    border: 0;
+  }
   .header {
     color: $primary-blue;
     font-size: 1.2em;
     text-transform: uppercase;
     font-weight: 700;
     padding: 10px 0 6px;
+    margin-bottom: 8px;
     position: relative;
 
     &:before {
@@ -80,38 +82,103 @@
       top: 50%;
       z-index: 1;
     }
-
     &.header-1 span {
       background: $column-1-bg;
     }
-
     &.header-2 span {
       background: $column-2-bg;
     }
-
     &.header-3 span {
       background: $column-3-bg;
     }
-
     span {
       z-index: 5;
       padding-right: 5px;
       position: relative;
     }
   }
+  .post {
+    .post-age {
+      float: left;
+      font-size: 14px;
+    }
+    .post-views {
+      float: right;
+      font-size: 14px;
+    }
+    .post-views, .post-age {
+      color: #c0c0c0;
+    }
+    .quick-share {
+      display: none;
+    }
+    a, a:hover {
+      color: #7C7C7C;
+    }
+    .post-meta-info {
+      height: 25px;
+      padding-top: 5px;
 
+      &:hover {
+        .post-age, .post-views {
+          display: none;
+        }
+        .quick-share {
+          display: block;
+        }
+      }
+    }
+  }
   .column-1 {
     width: 100%;
     background-color: $column-1-bg;
-  }
 
+    .post {
+      height: 100px;
+
+      .post-title {
+        font-weight: 500;
+        display: block;
+        padding: 2px 0 5px;
+      }
+      img {
+        max-width: 100px;
+        float: left;
+        padding-right: 13px;
+      }
+    }
+  }
   .column-2 {
     background-color: $column-2-bg;
   }
-
   .column-3 {
     background-color: $column-3-bg;
     min-width: 320px;
     width: 100%;
+    text-align: center;
+
+    .header {
+      text-align: left !important;
+    }
+
+    .post {
+      margin-bottom: 20px;
+
+      .post-title {
+      }
+      .caption {
+        min-width: 90%;
+        margin: 0 15px;
+        height: 40px;
+        background:white;
+        padding: 11px;
+        font-size: 20px;
+        display: inline-table;
+        text-align: left;
+      }
+      .quick-share {
+        margin-top: -5px;
+      }
+    }
   }
 }
