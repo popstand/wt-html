@@ -1,11 +1,48 @@
+@media (min-width: 640px) {
+  .seventh-item, .sixth-item, .fifth-item, .fourth-item {
+    display: none !important;
+  }
+}
+@media (min-width: 768px) {
+  .fourth-item {
+    display: inline-block !important;
+  }
+}
+@media (min-width: 992px) {
+  .fifth-item, .sixth-item {
+    display: inline-block !important;
+  }
+}
+@media (min-width: 1200px) {
+  .seventh-item {
+    display: inline-block !important;
+  }
+}
+
+
 .navbar {
   background: white;
+  text-transform: uppercase;
+  font-size: 0.9em;
+
+  li {
+    a {
+      color: #a8a8a8;
+      font-weight: 700;
+    }
+  }
+
+  .dropdown-menu {
+    min-width:350px;
+    padding: 15px;
+    background: #EEE;
+    border: 0;
+  }
 
   .icon-bar {
     background-color: black !important;
   }
 }
-
 
 .navbar-brand {
   padding: 6px 15px 15px 15px !important;
