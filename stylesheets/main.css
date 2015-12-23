@@ -108,7 +108,7 @@ body {
   .columns .post .post-meta-info:hover .quick-share {
     display: block; }
 .columns .column-1 {
-  width: 50%;
+  width: 100%;
   background-color: #fff; }
   .columns .column-1 .post {
     height: 100px; }
