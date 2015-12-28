@@ -8,6 +8,12 @@ body {
 .container-fluid {
   max-width: 1440px; }
 
+.column-1 {
+  width: 100%; }
+
+.column-2, .column-3 {
+  display: none; }
+
 @media (min-width: 640px) {
   .flex {
     display: -webkit-flex;
@@ -20,7 +26,8 @@ body {
     width: 50%; }
 
   .column-2 {
-    width: 50%; }
+    width: 50%;
+    display: block; }
 
   .column-3 {
     display: none; } }
@@ -30,7 +37,10 @@ body {
     display: flex; }
 
   .flex > div[class*='col-sm']:not(.fixed) {
-    flex: 1 1 auto; } }
+    flex: 1 1 auto; }
+
+  .column-1 {
+    width: 50%; } }
 @media (min-width: 992px) {
   .flex {
     display: -webkit-flex;
@@ -55,6 +65,9 @@ body {
 
   .flex > div[class*='col-lg']:not(.fixed) {
     flex: 1 1 auto; }
+
+  .column-1 {
+    max-width: 320px; }
 
   .column-2 {
     min-width: 420px; } }
@@ -97,9 +110,11 @@ body {
 .columns .post .post-views, .columns .post .post-age {
   color: #c0c0c0; }
 .columns .post .quick-share {
-  display: none; }
-.columns .post a, .columns .post a:hover {
-  color: #7C7C7C; }
+  display: none;
+  float: right; }
+  .columns .post .quick-share .twitter-share-button {
+    position: relative !important;
+    bottom: -5px; }
 .columns .post .post-meta-info {
   height: 25px;
   padding-top: 5px; }
@@ -108,10 +123,12 @@ body {
   .columns .post .post-meta-info:hover .quick-share {
     display: block; }
 .columns .column-1 {
-  width: 100%;
   background-color: #fff; }
   .columns .column-1 .post {
-    height: 100px; }
+    height: 100px;
+    margin-bottom: 15px; }
+    .columns .column-1 .post a, .columns .column-1 .post a:hover {
+      color: #7C7C7C; }
     .columns .column-1 .post .post-title {
       font-weight: 500;
       display: block;
@@ -122,6 +139,23 @@ body {
       padding-right: 13px; }
 .columns .column-2 {
   background-color: #f5f4f4; }
+  .columns .column-2 .post {
+    margin-bottom: 10px; }
+    .columns .column-2 .post a, .columns .column-2 .post a:hover {
+      color: #333333; }
+  .columns .column-2 .post-meta-info {
+    padding-top: 0; }
+  .columns .column-2 .caption {
+    padding-top: 3px;
+    font-size: 1.3em;
+    font-weight: 300; }
+    .columns .column-2 .caption span {
+      display: inline-block;
+      margin-left: 3px;
+      line-height: 20px; }
+  .columns .column-2 .quick-share {
+    position: relative;
+    top: -5px; }
 .columns .column-3 {
   background-color: #ecebeb;
   min-width: 320px;
@@ -131,6 +165,8 @@ body {
     text-align: left !important; }
   .columns .column-3 .post {
     margin-bottom: 20px; }
+    .columns .column-3 .post .post-meta-info {
+      position: relative; }
     .columns .column-3 .post .caption {
       min-width: 95%;
       height: 40px;
@@ -140,7 +176,12 @@ body {
       display: inline-table;
       text-align: left; }
     .columns .column-3 .post .quick-share {
-      margin-top: -5px; }
+      position: absolute;
+      right: 0;
+      bottom: 0; }
+      .columns .column-3 .post .quick-share .twitter-share-button {
+        position: relative !important;
+        bottom: -7px; }
 
 @media (min-width: 640px) {
   .seventh-item, .sixth-item, .fifth-item, .fourth-item {
@@ -189,9 +230,8 @@ body {
   background-image: url("../img/jumbotron-bg.jpg");
   background-size: cover; }
   .jumbotron-container .jumbotron {
+    text-align: center;
     height: 320px;
-    width: 780px;
-    margin-left: 40%;
     margin-bottom: 0;
     background: transparent;
     border-radius: 0;
@@ -199,21 +239,62 @@ body {
     -moz-border-radius: 0;
     -ms-border-radius: 0;
     -o-border-radius: 0; }
-    .jumbotron-container .jumbotron h1 {
-      font-size: 24px;
-      padding-top: 0;
-      margin-top: 0;
-      margin-right: 80px;
-      color: #6dcff6;
-      text-transform: uppercase; }
+    .jumbotron-container .jumbotron span {
+      display: block; }
+      .jumbotron-container .jumbotron span a {
+        font-weight: 500;
+        letter-spacing: -2px;
+        font-size: 3.3em;
+        padding-top: 0;
+        margin-top: 0;
+        text-align: center;
+        color: #6dcff6;
+        text-transform: uppercase;
+        line-height: 40px;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4); }
+        .jumbotron-container .jumbotron span a:hover {
+          cursor: pointer; }
     .jumbotron-container .jumbotron p {
-      color: white; }
+      color: white;
+      line-height: 23px;
+      display: none;
+      margin: 12px 0 18px 0; }
     .jumbotron-container .jumbotron .btn-read-more {
       border-color: white;
-      color: white;
-      background: transparent; }
+      font-size: 1.2em;
+      color: #6dcff6;
+      background: transparent;
+      border: 3px solid #6dcff6;
+      font-weight: 700;
+      text-transform: uppercase; }
       .jumbotron-container .jumbotron .btn-read-more:hover {
         border-color: #6dcff6;
         color: #6dcff6; }
+
+@media (min-width: 640px) {
+  .jumbotron span {
+    font-size: 1.8em !important; }
+    .jumbotron span a {
+      letter-spacing: -2px;
+      font-size: 1.8em !important; } }
+@media (min-width: 640px) and (min-width: 768px) {
+  .jumbotron {
+    max-width: 780px;
+    margin-left: 40%; }
+    .jumbotron span {
+      font-size: 1.5em !important; }
+    .jumbotron p {
+      display: inline-block !important; }
+    .jumbotron .btn-read-more {
+      color: white !important;
+      font-weight: 400 !important;
+      border: 2px solid white !important; } }
+@media (min-width: 640px) and (min-width: 992px) {
+  .jumbotron {
+    text-align: left !important; }
+    .jumbotron span {
+      text-align: left !important; }
+      .jumbotron span a {
+        font-size: 2.1em !important; } }
 
 /*# sourceMappingURL=main.css.map */

@@ -4,36 +4,94 @@
   background-size:cover;
 
   .jumbotron {
+    text-align: center;
     height: 320px;
-    max-width: 780px;
-    margin-left: 40%;
     margin-bottom: 0;
     background: transparent;
-
     @include border-radius(0);
 
-    h1 {
-      font-size: 24px;
-      padding-top: 0;
-      margin-top: 0;
-      margin-right: 80px;
-      color: #6dcff6;
-      text-transform: uppercase;
+    span {
+      display: block;
+      a {
+        font-weight: 500;
+        letter-spacing: -2px;
+        font-size: 3.3em;
+        padding-top: 0;
+        margin-top: 0;
+        text-align: center;
+        color: $primary-blue;
+        text-transform: uppercase;
+        line-height: 40px;
+        @include text-shadow();
+        &:hover {
+          cursor: pointer;
+        }
+      }
     }
-
     p {
       color: white;
+      line-height: 23px;
+      display: none;
+      margin: 12px 0 18px 0;
     }
-
     .btn-read-more {
       border-color: white;
-      color: white;
+      font-size: 1.2em;
+      color: $primary-blue;
       background: transparent;
-
+      border: 3px solid $primary-blue;
+      font-weight: 700;
+      text-transform: uppercase;
       &:hover {
-        border-color: #6dcff6;
+        border-color: $primary-blue;
         color: $primary-blue
       }
     }
+  }
+}
+
+
+@media (min-width: 640px) {
+  .jumbotron {
+    span {
+      font-size: 1.8em !important;
+      a {
+        letter-spacing: -2px;
+        font-size: 1.8em !important;
+      }
+    }
+  }
+  @media (min-width: 768px) {
+    .jumbotron {
+      max-width: 780px;
+      margin-left: 40%;
+
+      span {
+        font-size: 1.5em !important;
+      }
+      p {
+        display: inline-block !important;
+      }
+      .btn-read-more {
+        color: white !important;
+        font-weight: 400 !important;
+        border: 2px solid white !important;
+      }
+    }
+  }
+  @media (min-width: 992px) {
+    .jumbotron {
+      text-align: left !important;
+
+      span {
+        text-align: left !important;
+
+        a {
+          font-size: 2.1em !important;
+        }
+      }
+    }
+  }
+  @media (min-width: 1200px) {
   }
 }
