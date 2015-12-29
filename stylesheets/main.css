@@ -296,5 +296,11 @@ body {
       text-align: left !important; }
       .jumbotron span a {
         font-size: 2.1em !important; } }
+.category-title {
+  padding: 10px 15px;
+  font-size: 1.6em;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px; }
 
 /*# sourceMappingURL=main.css.map */

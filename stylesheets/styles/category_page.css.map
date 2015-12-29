@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,eAAgB;EACd,OAAO,EAAE,SAAS;EAClB,SAAS,EAAE,KAAK;EAChB,cAAc,EAAE,SAAS;EACzB,WAAW,EAAE,GAAG;EAChB,cAAc,EAAE,GAAG",
+"sources": ["../sass/styles/category_page.scss"],
+"names": [],
+"file": "category_page.css"
+}
