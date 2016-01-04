@@ -92,9 +92,6 @@
 
     @include border-radius(0);
 
-    li {
-      float: left;
-    }
   }
   li {
     &:hover {
