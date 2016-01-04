@@ -215,6 +215,8 @@ body {
     padding: 15px;
     background: #EEE;
     border: 0; }
+    .navbar .search .search-input {
+      width: 250px; }
     .navbar .search button {
       font-size: 11px; }
   .navbar .icon-bar {
