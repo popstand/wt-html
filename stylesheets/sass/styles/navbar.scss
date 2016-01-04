@@ -58,14 +58,16 @@
     }
     .menu-item-caption {
       a, a:hover {
-        color: #333;
+        color: #767676;
+        font-weight: 400;
         background-color: white;
       }
       display: block;
       text-align: left;
       white-space: normal;
       line-height: 15px;
-      padding-top: 9px;
+      padding-top: 6px;
+      padding-left: 2px;
     }
   }
 }
