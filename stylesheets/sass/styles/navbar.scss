@@ -1,7 +1,15 @@
+.search-dropdown, .social-networks {
+  display: none !important;
+}
+
 @media (min-width: 640px) {
   .item-8, .item-7, .item-6,
   .item-5, .item-4, .item-3 {
     display: none !important;
+  }
+
+  .search-dropdown, .social-networks {
+    display: inline !important;
   }
 
   .navbar-right {
