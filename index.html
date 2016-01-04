@@ -19,7 +19,10 @@
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 </head>
 
-<body>
+<!-- YOUTUBE SUBSCRIBE BUTTON SNIPPET -->
+<script src="https://apis.google.com/js/platform.js"></script>
+<!-- END YOUTUBE SUBSCRIBE BUTTON SNIPPET -->
+
 
 <!-- TWITTER SHARE BUTTON SNIPPET -->
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
@@ -77,6 +80,29 @@
                 </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown social-networks">
+                    <a href="#" class="dropdown-toggle" data-hover="dropdown" data-delay="0">
+                        <img src="/img/social-networks-gray.png"  class="social-networks-gray" />
+                        <img src="/img/social-networks-white.png" class="social-networks-white" />
+                    </a>
+                    <ul class="dropdown-menu">
+                        <div>
+                            <!-- Facebook Like -->
+                            <div class="fb-like" data-href="http://facebook.com/whatstrending" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+                            <!-- End Facebook Like -->
+
+                            <!-- Twitter Follow -->
+                            <br><br><a class="twitter-follow-button"
+                               href="https://twitter.com/whatstrending">
+                                Follow</a>
+                            <!-- End Twitter Follow -->
+
+                            <!-- Youtube Subscribe-->
+                            <br><br><div class="g-ytsubscribe" data-channel="Whatstrending" data-layout="default" data-count="default"></div>
+                            <!-- End Youtube subscribe-->
+                        </div>
+                    </ul>
+                </li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-hover="dropdown">
                         <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
