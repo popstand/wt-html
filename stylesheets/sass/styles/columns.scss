@@ -4,7 +4,6 @@
 .column-2, .column-3 {
   display: none;
 }
-
 @media (min-width: 640px) {
   .flex {
     display: -webkit-flex;
@@ -63,54 +62,55 @@
   .flex > div[class*='col-lg']:not(.fixed) {
     flex:1 1 auto;
   }
-
   .column-1 {
     max-width: 320px;
   }
-
   .column-2 {
     min-width: 420px;
   }
 }
+.column-header {
+  color: $primary-blue;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 10px 0 6px;
+  margin-bottom: 8px;
+  position: relative;
+  text-align: left;
 
+  &:before {
+    content: "";
+    display: block;
+    border-top: solid 1px $primary-blue;
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    top: 53%;
+    z-index: 1;
+  }
+  &.header-1 span {
+    background: $column-1-bg;
+  }
+  &.header-2 span {
+    background: $column-2-bg;
+  }
+  &.header-3 span {
+    background: $column-3-bg;
+  }
+  &.post-right-col-header span {
+    background: #f5f5f5;
+  }
+  span {
+    z-index: 5;
+    padding-right: 5px;
+    position: relative;
+  }
+}
 .columns {
   .thumbnail {
     padding: 0;
     border: 0;
-  }
-  .header {
-    color: $primary-blue;
-    font-size: 1.2em;
-    text-transform: uppercase;
-    font-weight: 700;
-    padding: 10px 0 6px;
-    margin-bottom: 8px;
-    position: relative;
-
-    &:before {
-      content: "";
-      display: block;
-      border-top: solid 1px $primary-blue;
-      width: 100%;
-      height: 1px;
-      position: absolute;
-      top: 50%;
-      z-index: 1;
-    }
-    &.header-1 span {
-      background: $column-1-bg;
-    }
-    &.header-2 span {
-      background: $column-2-bg;
-    }
-    &.header-3 span {
-      background: $column-3-bg;
-    }
-    span {
-      z-index: 5;
-      padding-right: 5px;
-      position: relative;
-    }
   }
   .post {
     .post-age {

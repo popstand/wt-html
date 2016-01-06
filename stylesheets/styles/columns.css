@@ -1,35 +1,24 @@
 /*
 Error: Undefined variable: "$primary-blue".
-        on line 82 of stylesheets/sass/styles/columns.scss
+        on line 73 of stylesheets/sass/styles/columns.scss
 
-77:   .thumbnail {
-78:     padding: 0;
-79:     border: 0;
-80:   }
-81:   .header {
-82:     color: $primary-blue;
-83:     font-size: 1.2em;
-84:     text-transform: uppercase;
-85:     font-weight: 700;
-86:     padding: 10px 0 6px;
-87:     margin-bottom: 8px;
+68:   .column-2 {
+69:     min-width: 420px;
+70:   }
+71: }
+72: .column-header {
+73:   color: $primary-blue;
+74:   font-size: 1.2em;
+75:   text-transform: uppercase;
+76:   font-weight: 700;
+77:   padding: 10px 0 6px;
+78:   margin-bottom: 8px;
 
 Backtrace:
-stylesheets/sass/styles/columns.scss:82
+stylesheets/sass/styles/columns.scss:73
 /Users/whitman/.rvm/gems/ruby-2.1.3/gems/sass-3.4.20/lib/sass/script/tree/variable.rb:49:in `_perform'
 /Users/whitman/.rvm/gems/ruby-2.1.3/gems/sass-3.4.20/lib/sass/script/tree/node.rb:50:in `perform'
 /Users/whitman/.rvm/gems/ruby-2.1.3/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:395:in `visit_prop'
-/Users/whitman/.rvm/gems/ruby-2.1.3/gems/sass-3.4.20/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/whitman/.rvm/gems/ruby-2.1.3/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/Users/whitman/.rvm/gems/ruby-2.1.3/gems/sass-3.4.20/lib/sass/stack.rb:79:in `block in with_base'
-/Users/whitman/.rvm/gems/ruby-2.1.3/gems/sass-3.4.20/lib/sass/stack.rb:115:in `with_frame'
-/Users/whitman/.rvm/gems/ruby-2.1.3/gems/sass-3.4.20/lib/sass/stack.rb:79:in `with_base'
-/Users/whitman/.rvm/gems/ruby-2.1.3/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/Users/whitman/.rvm/gems/ruby-2.1.3/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:431:in `block (2 levels) in visit_rule'
-/Users/whitman/.rvm/gems/ruby-2.1.3/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:431:in `map'
-/Users/whitman/.rvm/gems/ruby-2.1.3/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:431:in `block in visit_rule'
-/Users/whitman/.rvm/gems/ruby-2.1.3/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/Users/whitman/.rvm/gems/ruby-2.1.3/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:429:in `visit_rule'
 /Users/whitman/.rvm/gems/ruby-2.1.3/gems/sass-3.4.20/lib/sass/tree/visitors/base.rb:36:in `visit'
 /Users/whitman/.rvm/gems/ruby-2.1.3/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
 /Users/whitman/.rvm/gems/ruby-2.1.3/gems/sass-3.4.20/lib/sass/stack.rb:79:in `block in with_base'
@@ -78,4 +67,4 @@ stylesheets/sass/styles/columns.scss:82
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$primary-blue\".\A         on line 82 of stylesheets/sass/styles/columns.scss\A \A 77:   .thumbnail {\A 78:     padding: 0;\A 79:     border: 0;\A 80:   }\A 81:   .header {\A 82:     color: $primary-blue;\A 83:     font-size: 1.2em;\A 84:     text-transform: uppercase;\A 85:     font-weight: 700;\A 86:     padding: 10px 0 6px;\A 87:     margin-bottom: 8px;"; }
+  content: "Error: Undefined variable: \"$primary-blue\".\A         on line 73 of stylesheets/sass/styles/columns.scss\A \A 68:   .column-2 {\A 69:     min-width: 420px;\A 70:   }\A 71: }\A 72: .column-header {\A 73:   color: $primary-blue;\A 74:   font-size: 1.2em;\A 75:   text-transform: uppercase;\A 76:   font-weight: 700;\A 77:   padding: 10px 0 6px;\A 78:   margin-bottom: 8px;"; }
