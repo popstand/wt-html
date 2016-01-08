@@ -23,9 +23,8 @@ $(document).ready(function(){
 // buttons on the article page itself.
 $(window).on('scroll', function() {
     var yScrollPos = window.pageYOffset;
-    var scrollPosToShowNavbarSharing = $sharingEl.position().top + $sharingEl.height();
-
     var $sharingEl = $('.post-container .share-btn-group');
+    var scrollPosToShowNavbarSharing = $sharingEl.position().top + $sharingEl.height();
     var $categoryNavEl = $('.navbar-article-categories');
     var $socialNavEl = $('.navbar-social');
 
@@ -33,7 +32,7 @@ $(window).on('scroll', function() {
         $categoryNavEl.hide();
         $socialNavEl.show();
     }
-    if(yScrollPos < scrollPosToRelocateAt) {
+    if(yScrollPos < scrollPosToShowNavbarSharing) {
         $categoryNavEl.show();
         $socialNavEl.hide();
     }

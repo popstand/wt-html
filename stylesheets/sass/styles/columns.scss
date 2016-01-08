@@ -74,8 +74,7 @@
   font-size: 1.2em;
   text-transform: uppercase;
   font-weight: 700;
-  padding: 10px 0 6px;
-  margin-bottom: 8px;
+  padding: 10px 0 10px;
   position: relative;
   text-align: left;
 
@@ -86,7 +85,7 @@
     width: 100%;
     height: 1px;
     position: absolute;
-    top: 53%;
+    top: 45%;
     z-index: 1;
   }
   &.header-1 span {
@@ -108,41 +107,55 @@
   }
 }
 .columns {
+  .column-1, .column-2, .column-3 {
+    padding-left: 20px;
+    padding-right: 20px;
+
+    .post-meta-info {
+      font-size: 12px;
+    }
+  }
   .thumbnail {
     padding: 0;
     border: 0;
   }
+  .category-label {
+    display: block;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 600;
+    color: #999;
+  }
   .post {
+    &:hover {
+      .post-age, .post-views {
+        display: none;
+      }
+      .quick-share {
+        display: block;
+      }
+    }
     .post-age {
       float: left;
-      font-size: 14px;
+      margin-left: 3px;
     }
     .post-views {
       float: right;
-      font-size: 14px;
     }
     .post-views, .post-age {
       color: #c0c0c0;
     }
     .quick-share {
       display: none;
-      float: right;
+      float: left;
       .twitter-share-button {
         position: relative !important;
-        bottom: -5px;
+        bottom: -7px;
       }
     }
     .post-meta-info {
       height: 25px;
       padding-top: 5px;
-      &:hover {
-        .post-age, .post-views {
-          display: none;
-        }
-        .quick-share {
-          display: block;
-        }
-      }
     }
   }
   .column-1 {
@@ -152,6 +165,10 @@
       height: 100px;
       margin-bottom: 15px;
 
+      .twitter-share-button {
+        position: relative !important;
+        bottom: -6px;
+      }
       a, a:hover {
         color: #7C7C7C;
       }
@@ -159,6 +176,9 @@
         font-weight: 500;
         display: block;
         padding: 2px 0 5px;
+      }
+      .post-age {
+        margin-left: 0;
       }
       img {
         max-width: 100px;
@@ -171,7 +191,7 @@
     background-color: $column-2-bg;
 
     .post {
-      margin-bottom: 10px;
+      margin-bottom: 15px;
       a, a:hover {
         color: #333333;
       }
@@ -185,13 +205,15 @@
         margin-left: 3px;
         line-height: 20px;
       }
-      padding-top: 3px;
       font-size: 1.3em;
       font-weight: 300;
     }
     .quick-share {
       position: relative;
       top: -5px;
+    }
+    .twitter-share-button {
+      bottom: -4px !important;
     }
   }
   .column-3 {
@@ -203,16 +225,18 @@
     a {
       color: #333;
     }
+    .category-label {
+      padding-bottom: 2px;
+    }
     .header {
       text-align: left !important;
     }
     .post {
-      margin-bottom: 20px;
+      margin-bottom: 30px;
 
       .post-meta-info {
         position: relative;
       }
-
       .caption {
         min-width: 95%;
         height: 40px;
@@ -224,11 +248,12 @@
       }
       .quick-share {
         position: absolute;
-        right: 0;
+        left: 0;
         bottom: 0;
+
         .twitter-share-button {
           position: relative !important;
-          bottom: -7px;
+          bottom: -6px;
         }
       }
     }

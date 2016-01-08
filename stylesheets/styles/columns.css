@@ -11,8 +11,8 @@ Error: Undefined variable: "$primary-blue".
 74:   font-size: 1.2em;
 75:   text-transform: uppercase;
 76:   font-weight: 700;
-77:   padding: 10px 0 6px;
-78:   margin-bottom: 8px;
+77:   padding: 10px 0 10px;
+78:   position: relative;
 
 Backtrace:
 stylesheets/sass/styles/columns.scss:73
@@ -67,4 +67,4 @@ stylesheets/sass/styles/columns.scss:73
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$primary-blue\".\A         on line 73 of stylesheets/sass/styles/columns.scss\A \A 68:   .column-2 {\A 69:     min-width: 420px;\A 70:   }\A 71: }\A 72: .column-header {\A 73:   color: $primary-blue;\A 74:   font-size: 1.2em;\A 75:   text-transform: uppercase;\A 76:   font-weight: 700;\A 77:   padding: 10px 0 6px;\A 78:   margin-bottom: 8px;"; }
+  content: "Error: Undefined variable: \"$primary-blue\".\A         on line 73 of stylesheets/sass/styles/columns.scss\A \A 68:   .column-2 {\A 69:     min-width: 420px;\A 70:   }\A 71: }\A 72: .column-header {\A 73:   color: $primary-blue;\A 74:   font-size: 1.2em;\A 75:   text-transform: uppercase;\A 76:   font-weight: 700;\A 77:   padding: 10px 0 10px;\A 78:   position: relative;"; }
