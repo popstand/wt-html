@@ -12,6 +12,16 @@ $(document).ready(function(){
 
     // Show sharing menu on header
 
+
+    // select dropdown menu submenu item
+    $(".dropdown_submenu li").on('click', function() {
+
+      // remove other selected lis
+      $(".dropdown_submenu li").removeClass("selected");
+      $(this).addClass("selected")
+
+      // load the new stuff
+    })
 })
 
 //
