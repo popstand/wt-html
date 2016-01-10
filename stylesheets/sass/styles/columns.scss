@@ -160,11 +160,20 @@
   }
   .column-1 {
     background-color: $column-1-bg;
-
     .post {
       height: 100px;
       margin-bottom: 15px;
 
+      .post-thumbnail {
+        display: inline-block;
+        float: left;
+        width: 80px;
+        height: 80px;
+        margin-right: 12px;
+        background-image: url('http://placehold.it/160x80');
+        background-position: center;
+        background-size: cover;
+      }
       .twitter-share-button {
         position: relative !important;
         bottom: -6px;
@@ -175,7 +184,6 @@
       .post-title {
         font-weight: 500;
         display: block;
-        padding: 2px 0 5px;
       }
       .post-age {
         margin-left: 0;
