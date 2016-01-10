@@ -26,11 +26,11 @@ $(window).on('scroll', function() {
     var $sharingEl = $('.post-container .share-btn-group');
     var scrollPosToShowNavbarSharing = $sharingEl.position().top + $sharingEl.height();
     var $categoryNavEl = $('.navbar-article-categories');
-    var $socialNavEl = $('.navbar-social');
+    var $socialNavEl = $('.navbar .share-btn-group');
 
     if(yScrollPos > scrollPosToShowNavbarSharing) {
         $categoryNavEl.hide();
-        $socialNavEl.show();
+        $socialNavEl.css('display', 'inline-block');
     }
     if(yScrollPos < scrollPosToShowNavbarSharing) {
         $categoryNavEl.show();

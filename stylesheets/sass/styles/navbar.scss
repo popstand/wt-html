@@ -1,6 +1,9 @@
 .search-dropdown, .social-networks {
   display: none !important;
 }
+.navbar-social {
+
+}
 
 @media (min-width: 640px) {
   .item-8, .item-7, .item-6,
@@ -76,6 +79,22 @@
   }
 }
 .navbar {
+
+  .share-btn-group {
+    display: none;
+    margin-top: 10px;
+    margin-bottom: 0;
+
+    .network-name {
+      position: relative;
+      top: -1px;
+    }
+    a {
+      padding: 6px 15px 5px 11px;
+    }
+  }
+}
+.navbar {
   background: white;
   text-transform: uppercase;
   font-size: 0.9em;
@@ -87,26 +106,6 @@
   .search-dropdown a {
     position: relative;
     bottom: -2px;
-  }
-  .navbar-social {
-    display: none;
-    margin-bottom: 2px;
-
-    .network-name {
-      position: relative;
-      top: -1px;
-    }
-    .show-more a, .show-less a {
-      padding: 8px 13px 8px 14px;
-    }
-    .share-btn-group {
-      margin-top: 10px;
-      margin-bottom: 0;
-
-      a {
-        padding: 6px 15px 5px 11px;
-      }
-    }
   }
   .menu-caret {
     font-size: 0.6em;

@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$facebook-blue".
-        on line 44 of stylesheets/sass/base/globals.scss
+        on line 51 of stylesheets/sass/base/globals.scss
 
-39:   }
-40:   .network-name {
-41:     font-size: 0.9em;
-42:   }
-43:   .facebook {
-44:     background: $facebook-blue;
-45:   }
-46:   .twitter {
-47:     background: $twitter-blue;
-48:   }
-49:   .pinterest {
+46:   }
+47:   .facebook, .twitter {
+48:     padding-right: 18px;
+49:   }
+50:   .facebook {
+51:     background: $facebook-blue;
+52:   }
+53:   .twitter {
+54:     background: $twitter-blue;
+55:   }
+56:   .pinterest {
 
 Backtrace:
-stylesheets/sass/base/globals.scss:44
+stylesheets/sass/base/globals.scss:51
 /Users/whitman/.rvm/gems/ruby-2.1.3/gems/sass-3.4.20/lib/sass/script/tree/variable.rb:49:in `_perform'
 /Users/whitman/.rvm/gems/ruby-2.1.3/gems/sass-3.4.20/lib/sass/script/tree/node.rb:50:in `perform'
 /Users/whitman/.rvm/gems/ruby-2.1.3/gems/sass-3.4.20/lib/sass/tree/visitors/perform.rb:395:in `visit_prop'
@@ -78,4 +78,4 @@ stylesheets/sass/base/globals.scss:44
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$facebook-blue\".\A         on line 44 of stylesheets/sass/base/globals.scss\A \A 39:   }\A 40:   .network-name {\A 41:     font-size: 0.9em;\A 42:   }\A 43:   .facebook {\A 44:     background: $facebook-blue;\A 45:   }\A 46:   .twitter {\A 47:     background: $twitter-blue;\A 48:   }\A 49:   .pinterest {"; }
+  content: "Error: Undefined variable: \"$facebook-blue\".\A         on line 51 of stylesheets/sass/base/globals.scss\A \A 46:   }\A 47:   .facebook, .twitter {\A 48:     padding-right: 18px;\A 49:   }\A 50:   .facebook {\A 51:     background: $facebook-blue;\A 52:   }\A 53:   .twitter {\A 54:     background: $twitter-blue;\A 55:   }\A 56:   .pinterest {"; }
