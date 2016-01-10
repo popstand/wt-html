@@ -45,8 +45,8 @@
     li {
       margin-bottom: 20px;
     }
-    .category, .views {
-      display: inline;
+    .category a, .views {
+      display: inline-block;
       font-size: 0.8em;
       font-weight: 600;
       color: #999;
