@@ -7,16 +7,17 @@
     display: inline-block;
 
     a {
-      background: lightgray;
+      background: #E5E5E5;
     }
   }
-  .show-more a, .show-less a {
+  .show-more a {
     padding: 9px 13px 7px 14px;
   }
   .show-less {
     display: none;
     a {
-      background: lightgray;
+      background: #E5E5E5;
+      padding: 9px 13px 7px 13px;
     }
   }
   .secondary-networks {
@@ -47,7 +48,7 @@
   }
   .pinterest {
     background: $pinterest-red;
-    padding: 2px 6px 4px 11px;
+    padding: 2px 6px 4px 8px;
     font-size: 1.25em;
     i {
       margin-right: 0;
@@ -55,13 +56,34 @@
       bottom: -2px;
     }
   }
+  .reddit {
+    font-size: 1.15em;
+    background: $reddit-orange;
+    padding: 4px 10px 5px 5px;
+    i {
+      position: relative;
+      bottom: -1px;
+    }
+  }
+  .googleplus {
+    font-size: 1.2em;
+    padding: 3px 5px 5px 8px;
+    background: $googleplus-red;
+    i {
+      position: relative;
+      bottom: -3px;
+    }
+  }
+  .email {
+    font-size: 1.2em;
+    background: #444;
+    padding: 3px 8px 5px 7px;
+  }
   .stumbleupon {
     background: $stumbleupon-orange;
-    padding: 6px 10px 6px 11px;
+    padding: 6px 10px 6px 9px;
     i {
       margin-right: 0;
-      position: relative;
-      bottom: -2px;
     }
   }
 }
