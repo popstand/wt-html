@@ -43,6 +43,7 @@
       border: 3px solid $primary-blue;
       font-weight: 700;
       text-transform: uppercase;
+      margin-top: 5px;
       &:hover {
         border-color: $primary-blue;
         color: $primary-blue
@@ -77,6 +78,7 @@
         color: white !important;
         font-weight: 400 !important;
         border: 2px solid white !important;
+        margin-top: 0 !important;
       }
     }
   }
