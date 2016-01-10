@@ -18,7 +18,7 @@
   }
 }
 @media (min-width: 768px) {
-  .item-3 {
+  .item-3, .item-4, .item-5 {
     display: inline !important;
   }
 
@@ -27,12 +27,12 @@
   }
 }
 @media (min-width: 992px) {
-  .item-5, .item-6 {
+  .item-6, .item-7 {
     display: inline !important;
   }
 }
 @media (min-width: 1200px) {
-  .item-7, .item-8 {
+  .item-8 {
     display: inline !important;
   }
 }
